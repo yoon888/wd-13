@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조이컨트리클럽</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-1.12.4.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <div class="left">
-            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt=""></a></div>
             <ul class="gnb">
                 <li>
                     <a href="#">CLUB</a>
@@ -52,65 +55,87 @@
         <div class="right">
             <div class="slider">
                 <div class="slide">
-                    <div><img src="/images/slide1.jpg" alt="슬라이드 이미지"></div>
-                    <div><img src="/images/slide2.jpg" alt="슬라이드 이미지"></div>
-                    <div><img src="/images/slide3.jpg" alt="슬라이드 이미지"></div>
+                    <div>
+                        <img src="./images/slide1.jpg" alt="슬라이드 이미지">
+                        <div class="text_box">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>amet consectetur adipisicing elit. Corrupti voluptatem quos modi.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/slide2.jpg" alt="슬라이드 이미지">
+                    </div>
+                    <div>
+                        <img src="./images/slide3.jpg" alt="슬라이드 이미지">
+                    </div>
                 </div>
                 <ul class="link">
                     <li>
-                        <div class="photo"><img src="./images/link1.jpg" alt=""></div>
-                        <p>link_1</p>
+                        <a href="#">
+                            <div class="photo"><img src="./images/link1.jpg" alt=""></div>
+                            <p>link_1</p>
+                        </a>
                     </li>
                     <li>
-                        <div class="photo"><img src="./images/link2.jpg" alt=""></div>
-                        <p>link_2</p>
+                        <a href="#">
+                            <div class="photo"><img src="./images/link2.jpg" alt=""></div>
+                            <p>link_2</p>
+                        </a>
                     </li>
                     <li>
-                        <div class="photo"><img src="./images/link3.jpg" alt=""></div>
-                        <p>link_3</p>
+                        <a href="#">
+                            <div class="photo"><img src="./images/link3.jpg" alt=""></div>
+                            <p>link_3</p>
+                        </a>
                     </li>
                 </ul>
+            </div>
             <div class="banner">
-                <div class="photo"><img src="./images/link2.jpg" alt="배너이미지"></div>
-                <div class="text_box">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, alias!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui molestias distinctio officiis quibusdam ducimus adipisci tempore quasi error numquam.</p>
-                </div>
-                <div class="arrow">
-                    <img src="./images/arrow.png" alt="다음으로 가기 화살표">
+                <div class="inner">
+                    <div class="photo"><img src="./images/link2.jpg" alt="배너 이미지"></div>
+                    <div class="text_box">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, numquam.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique obcaecati corporis totam
+                            id rerum repellat officia nesciunt voluptas, accusamus voluptate.</p>
+                    </div>
+                    <div class="arrow">
+                        <a href="#">
+                            <img src="./images/arrow.png" alt="다음으로 가기 화살표">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="tab">
                 <div class="tab_title">
-                    <h3>공지사항</h3>
+                    <h3 class="active">공지사항</h3>
                     <h3>갤러리</h3>
                 </div>
                 <div class="tab_content">
                     <ul class="notice">
                         <li>
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> 
+                            <a href="#">Lorem ipsum dolor sit amet consectetur elit.</a>
                             <span>2023.12.20</span>
                         </li>
                         <li>
-                            <a href="#">dolor sit amet consectetur adipisicing elit.</a> 
+                            <a href="#">dolor sit amet consectetur adipisicing elit.</a>
                             <span>2023.12.20</span>
                         </li>
                         <li>
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> 
+                            <a href="#">ipsum dolor sit amet consectetur adipisicing elit.</a>
                             <span>2023.12.20</span>
                         </li>
                         <li>
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> 
+                            <a href="#">amet consectetur adipisicing elit Lorem ipsum dolor sit .</a>
                             <span>2023.12.20</span>
                         </li>
                     </ul>
                     <ul class="gallery">
-                        <li><a href="#"><img src="./images/gallery1.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="./images/gallery2.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="./images/gallery3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/gallery1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/gallery2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./images/gallery3.jpg" alt=""></a></li>
                     </ul>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -124,11 +149,42 @@
                 <p>copyright(c) 2023 조이컨트리클럽</p>
             </div>
             <div class="sns">
-                <a href="#"><img src="./images/facebook.png" alt=""></a>
-                <a href="#"><img src="./images/Instagram.png" alt=""></a>
-                <a href="#"><img src="./images/YouTube.png" alt=""></a>
+                <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./images/Instagram.png" alt="instagram"></a>
+                <a href="#"><img src="./images/YouTube.png" alt="youtube"></a>
             </div>
         </div>
     </div>
+
+    <script>
+        // 메뉴
+        $('.gnb > li').hover(
+            function () {
+                $(this).find('ul').stop().slideDown()
+            },
+            function () {
+                $(this).find('ul').stop().slideUp()
+            },
+        )
+
+        // 슬라이드
+        setInterval(function () {
+            $('.slide').animate({ top: -400 }, function () {
+                $('.slide div:first').appendTo('.slide')
+                $('.slide').css('top', 0)
+            })
+        }, 1000)
+
+        // 탭
+        $('.tab_title h3').click(function () {
+            $('.tab_title h3').removeClass('active')
+            $(this).addClass('active')
+
+            $('.tab_content ul').hide()
+            $('.tab_content ul').eq($(this).index()).show()
+        })
+
+    </script>
 </body>
+
 </html>
